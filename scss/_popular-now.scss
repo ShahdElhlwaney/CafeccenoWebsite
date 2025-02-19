@@ -4,7 +4,7 @@
     &__container{
         width: 90vw;
         height: 90%;
-        background-color: #FFD28F;
+        background-color: $un-active-color;
         border-radius: 40px;
         margin-left: auto;
         margin-right: auto;
@@ -18,7 +18,6 @@
        
     }
     &__list{
-        // position: absolute;
         display: flex;
         width: 100%;
         justify-content:space-evenly;
@@ -48,7 +47,6 @@
                     img{
                         width: 12px;
                         height: 12px;
-                        // padding-top: 5px;
                     }
                 }
                 .price-container{
@@ -79,14 +77,13 @@
                         div{
                             width: 2rem;
                             height: 1rem;
-                            border: 1px solid #FFD28F;
+                            border: 1px solid $un-active-color;
                             border-radius: 5px;
                             font-size: 0.7rem;
-                            color: #FFD28F;
+                            color: $un-active-color;
                             text-align: center;
                         }
-                }
-                
+                }            
                 }
                 .cart-icon{
                     padding-left: 4px;
