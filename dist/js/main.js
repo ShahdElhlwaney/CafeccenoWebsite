@@ -68,3 +68,4 @@ leftBtn.addEventListener('click', function(){
     prevSlide(num);
     goToSlide(curSlide,num,widthItem);
 });
+
