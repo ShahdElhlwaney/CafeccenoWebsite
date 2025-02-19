@@ -1,0 +1,106 @@
+.popular-now{
+    height: 40%;
+    width: 100%;
+    &__container{
+        width: 90vw;
+        height: 90%;
+        background-color: #FFD28F;
+        border-radius: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        bottom: 7%;
+        h3{
+            position: relative;
+            bottom: 35%;
+            left: 10%;
+        }
+       
+    }
+    &__list{
+        // position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        .popular-now__item{
+            background-color: #fff;
+            position: relative;
+            bottom: 5rem;
+            border: solid 2px $grey;
+            border-radius: 10px;
+            padding: 10px;
+            &__content{
+                height: 100%;
+                .rate{
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: 3rem;
+                    height: 1.6rem;
+                    background-color: #fff;
+                    border-radius: $border-radius;
+                    border: solid 4px $grey;
+                    font-size: 12px;
+                    margin-top: 2%;
+                    margin-left: 2%;
+                    img{
+                        width: 12px;
+                        height: 12px;
+                        // padding-top: 5px;
+                    }
+                }
+                .price-container{
+                    padding: 0 4px;
+                    margin: 4px 0;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                img{
+                    width: 100%;
+                    height: 65%;
+                    border-radius: 6px;
+                }
+                .status-cart__container{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 7px 0;
+                    padding: 0 8px;
+                    .drink-status{
+                        display: flex;
+                        gap: 1rem;
+                        .active{
+                            border: 1px solid $secondary-color;
+                            color: $secondary-color;
+
+                        }
+                        div{
+                            width: 2rem;
+                            height: 1rem;
+                            border: 1px solid #FFD28F;
+                            border-radius: 5px;
+                            font-size: 0.7rem;
+                            color: #FFD28F;
+                            text-align: center;
+                        }
+                }
+                
+                }
+                .cart-icon{
+                    padding-left: 4px;
+                    padding-top: 1.5px;
+
+                    @include cart-icon-component(1.3rem);
+                    img{
+                        height: 0.8rem;
+                        width: 0.8rem;
+                    }
+                }
+            }
+        }
+       
+    }
+   
+}

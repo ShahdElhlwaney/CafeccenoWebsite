@@ -1,0 +1,222 @@
+@import 'config';
+@import 'header';
+@import 'welcome';
+@import 'responsive';
+
+.footer{
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    height: 30%;
+    bottom:0;
+    z-index: 1;
+    &-container{
+        width: 100%;
+        height: 80%;
+    &__content{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        &-logo{
+            display: flex;
+            gap:0.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        &__text-with-us{
+            display: flex;
+            flex-direction: column;
+            align-items: self-start;
+            h3{
+                color: #fff;
+            }
+            .subscribe {
+                input{
+                    border: 1px solid $primary-color;
+                    background-color: transparent;
+                    outline: none;
+                    color: #fff;
+                    height: 1.5rem;
+                    width: 13rem;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+                button{
+                    background-color: $primary-color;
+                    border: none;
+                    width: 5rem;
+                    height: 1.5rem;
+                    color: #fff;
+                    border-radius: 4px;
+                }
+              
+               
+            }
+            p{
+                color: #fff;
+                text-align: start;
+                span{
+                    margin-right: 25%;
+                }
+            }
+    
+        }
+        &-menu{
+            &__list{
+                color: white;
+                list-style-type: none;
+                text-align: center;
+            }
+        }
+        &__contact-us{
+                color: #fff;
+
+            
+    
+        }
+    }
+    hr{
+        width: 95%;
+        margin: 0 auto;
+    }
+    &:last-child{
+        color: $grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+   
+   
+}
+@include media-big-md{
+    .popular-now__item{
+        height: 12rem;
+
+    }
+    .orders-cover{
+        height: 45%;
+    }
+   
+}
+ 
+@include media-sm{
+ 
+    .welcome-cover--component{
+        display: none;
+    }
+    .website,.nav{
+        display: none;
+    }
+    .humburger{
+        display: block;
+    }
+    .signup-btn{
+
+        width: 10%;
+        position: absolute;
+        left: 28%;
+        top: 7%;
+    }
+    .welcome-cover__content{
+        align-items: center;
+    }
+    .popular-now__item{
+        margin-bottom: auto;
+    }
+    .orders-cover{
+        height: 30%;
+    }
+    .special-menu--list{
+        grid-template-columns: repeat(1,fr);
+
+    }
+    // .slide{
+    //     // width: 60%;
+    //     // margin-right: 30%;
+    //     background-color: red;
+    //     left: 19%;
+    //     // transform: translateX(-50%);
+    //     // width: 100rem;
+
+    // }
+}
+@include media-mini-med{
+    .orders-cover{
+        height: 40%;
+    }
+    // .slide{
+    //     width: 60%;
+    //     background-color: blue;
+    //     // position: absolute;
+    //     left: 19%;
+    // }
+}
+@include media-md{
+    
+    .website,.nav{
+        display: none;
+    }
+    .humburger{
+        display: block;
+    }
+    .signup-btn{
+        width: 10%;
+        position: absolute;
+        left: 20%;
+        // transform: translateX(60%);
+    }
+    .popular-now__item{
+        height: 17rem;
+
+    }
+    .orders-cover{
+        height: 55%;
+
+    }
+    // .slide{
+    //     // width: 39%;
+    //     background-color: orange;
+    // }
+   
+}
+
+
+@include media-lg{
+    .website,.nav{
+        display: flex;
+    }
+    .humburger{
+        display: none;
+    }
+    .signup-btn{
+        position: static;
+    }
+    .popular-now__item{
+        height: 20rem;
+
+    }
+    .orders-cover{
+        height: 60%;
+
+    }
+    // .slide{
+    //     // width: 20%;
+    //     background-color: green
+    // }
+}
+@include media-xl{
+
+    .popular-now__item{
+        height: 18rem;
+
+    }
+    .orders-cover{
+        height: 70%;
+    }
+}
+   
+
+
+

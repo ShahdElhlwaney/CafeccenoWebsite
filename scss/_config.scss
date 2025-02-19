@@ -1,19 +1,40 @@
 $primary-color:#2F2105;
 $secondary-color:#FF902B;
+$un-active-color:#FFD28F;
+$grey:#7E7D7A;
+$border-radius:22px;
+html{
+    font-size: 90%;
+
+    box-sizing: border-box;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-@mixin transition-ease{
-    transition: all ease-in-out;
+body{
+    overflow-x: hidden;
+
 }
+@mixin transition-ease{
+    transition: all 1s ease-in-out;
+}
+
 @function set-text-color($color){
-    @if(brightness($color)>40%)
+    @if(lightness($color)>40%)
     {
         @return $primary-color;
     }
     @else{
         @return #fff;
     }
+}
+@mixin cart-icon-component($size){
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    background-color: $secondary-color;
+    padding-left: auto;
 }
