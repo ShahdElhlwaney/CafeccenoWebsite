@@ -224,6 +224,307 @@ body {
   font-size: 1.2rem;
 }
 
+.popular-now {
+  height: 40%;
+  width: 100%;
+}
+.popular-now__container {
+  width: 90vw;
+  height: 90%;
+  background-color: #FFD28F;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 7%;
+}
+.popular-now__container h3 {
+  position: relative;
+  bottom: 35%;
+  left: 10%;
+}
+.popular-now__list {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.popular-now__list .popular-now__item {
+  background-color: #fff;
+  position: relative;
+  bottom: 5rem;
+  border: solid 2px #7E7D7A;
+  border-radius: 10px;
+  padding: 10px;
+}
+.popular-now__list .popular-now__item__content {
+  height: 100%;
+}
+.popular-now__list .popular-now__item__content .rate {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 3rem;
+  height: 1.6rem;
+  background-color: #fff;
+  border-radius: 22px;
+  border: solid 4px #7E7D7A;
+  font-size: 12px;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.popular-now__list .popular-now__item__content .rate img {
+  width: 12px;
+  height: 12px;
+}
+.popular-now__list .popular-now__item__content .price-container {
+  padding: 0 4px;
+  margin: 4px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.popular-now__list .popular-now__item__content img {
+  width: 100%;
+  height: 65%;
+  border-radius: 6px;
+}
+.popular-now__list .popular-now__item__content .status-cart__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0;
+  padding: 0 8px;
+}
+.popular-now__list .popular-now__item__content .status-cart__container .drink-status {
+  display: flex;
+  gap: 1rem;
+}
+.popular-now__list .popular-now__item__content .status-cart__container .drink-status .active {
+  border: 1px solid #FF902B;
+  color: #FF902B;
+}
+.popular-now__list .popular-now__item__content .status-cart__container .drink-status div {
+  width: 2rem;
+  height: 1rem;
+  border: 1px solid #FFD28F;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  color: #FFD28F;
+  text-align: center;
+}
+.popular-now__list .popular-now__item__content .cart-icon {
+  padding-left: 4px;
+  padding-top: 1.5px;
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #FF902B;
+  padding-left: auto;
+}
+.popular-now__list .popular-now__item__content .cart-icon img {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+.about-us {
+  height: 50%;
+  background: url(/dist/img/about-us-cover.png);
+  background-size: 100% 100%;
+}
+.about-us__content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-us__content img {
+  width: 16rem;
+  height: 16rem;
+}
+.about-us__content div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  margin-left: 3%;
+  position: relative;
+}
+.about-us__content div h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2F2105;
+}
+.about-us__content div .explore {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: red;
+  font-weight: 700;
+}
+
+.special-menu {
+  margin-top: 3%;
+}
+.special-menu h2 {
+  margin-left: 7%;
+  margin-bottom: 2%;
+}
+.special-menu--list {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: stretch;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 2rem;
+  justify-content: center;
+}
+.special-menu--list__item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 3px 2px 8px 2px #888888;
+}
+.special-menu--list__item__content .rate {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 3rem;
+  height: 1.6rem;
+  background-color: #fff;
+  border-radius: 22px;
+  border: solid 4px #7E7D7A;
+  font-size: 12px;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.special-menu--list__item__content .rate img {
+  width: 12px;
+  height: 12px;
+}
+.special-menu--list__item__content .price-container {
+  padding: 0 10px;
+  margin: 4px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.special-menu--list__item__content .price-container h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.special-menu--list__item__content img {
+  width: 100%;
+  height: 30%;
+  border-radius: 6px;
+}
+.special-menu--list__item__content .cart__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0;
+  padding: 0 8px;
+  color: #7E7D7A;
+}
+.special-menu--list__item__content .cart-icon {
+  padding-left: 4px;
+  padding-top: 1.5px;
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #FF902B;
+  padding-left: auto;
+}
+.special-menu--list__item__content .cart-icon img {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+.welcome {
+  width: 100%;
+  height: 50rem;
+  flex-direction: column;
+}
+.welcome .orders-cover {
+  margin-top: 2%;
+  display: block;
+  background: url("/dist/img/order-cover.png") no-repeat;
+  background-size: 100%;
+  transition: all 1s ease-in-out;
+}
+.welcome .blog-posts {
+  width: 100%;
+  height: 90%;
+  background: url("/dist/img/blog-posts-cover.png") no-repeat;
+  background-size: contain;
+  background-position: top center;
+  margin-top: 5%;
+}
+.welcome .blog-posts .blog-posts__slider__left-btn, .welcome .blog-posts .blog-posts__slider__right-btn {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.welcome .blog-posts h2 {
+  text-align: center;
+}
+.welcome .blog-posts__slider {
+  background-color: red;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  height: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+}
+.welcome .blog-posts__slider__left-btn, .welcome .blog-posts__slider__right-btn {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 2px solid #7E7D7A;
+  text-align: center;
+  line-height: 2.5rem;
+  color: #7E7D7A;
+  font-size: 1.5rem;
+  padding-top: 4px;
+  position: absolute;
+}
+.welcome .blog-posts__slider__left-btn:hover, .welcome .blog-posts__slider__right-btn:hover {
+  cursor: pointer;
+}
+.welcome .blog-posts__slider__right-btn {
+  right: 3rem;
+}
+.welcome .blog-posts__slider__left-btn {
+  left: 2rem;
+}
+.welcome .blog-posts__slider .slide {
+  position: absolute;
+  background-color: #fff;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+.welcome .blog-posts__slider .slide img {
+  height: 50%;
+  width: 60%;
+}
+.welcome .blog-posts__slider .slide h3 {
+  color: #FF902B;
+}
+.welcome .blog-posts__slider .slide p {
+  font-size: 0.8rem;
+}
+.welcome .blog-posts__slider .slide .read-more {
+  color: #FFD28F;
+}
+
 .footer {
   background-color: #000000;
   position: fixed;
