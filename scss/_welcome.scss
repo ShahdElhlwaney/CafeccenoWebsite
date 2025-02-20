@@ -2,13 +2,15 @@
 @import 'about-us';
 @import 'special-menu';
 @import 'blog-posts';
+@import 'subscribe';
+
 .welcome{
     width: 100%;
     height: 50rem;
     flex-direction: column;
     .orders-cover{
         margin-top: 2%;
-        height: 62%;
+        height: 66%;
         display: block;
         background: url('/dist/img/order-cover.png') no-repeat;
         background-size: 100%;
