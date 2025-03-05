@@ -24,7 +24,7 @@ body {
 .header-cover {
   height: 33rem;
   width: 100%;
-  background: url('https://shahdelhlwaney.github.io/CafeccenoWebsite/img/cover.png');
+  background: url("/dist/img/cover.png");
   background-position: top;
   background-size: cover;
   top: 0;
@@ -568,7 +568,7 @@ body {
   margin-top: 2%;
   height: 66%;
   display: block;
-  background: url("/dist/img/order-cover.png") no-repeat;
+  background: url("https://shahdelhlwaney.github.io/CafeccenoWebsite/img/order-cover.png") no-repeat;
   background-size: 100%;
   transition: all 1s ease-in-out;
 }
